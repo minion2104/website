@@ -1,0 +1,244 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Nike Store</title>
+</head>
+
+<body>
+    <nav id="nav">
+        <div class="navTop">
+            <div class="navItem">
+                <img class="im" height="2%" src="data:image/png;base64,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" alt="">
+            </div>
+            <div class="navItem">
+                <div class="search">
+                    <input type="text" placeholder="Search..." class="searchInput">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS63SKA-wL_NPMScjBr5Tw3r7d4XBhwstmQuA&usqp=CAU" width="20" height="20" alt="" class="searchIcon">
+                </div>
+            </div>
+            <div class="navItem">
+                <span class="limitedOffer">Limited Offer!</span>
+            </div>
+        </div>
+        <div class="navBottom">
+            <h3 class="menuItem">AIR FORCE</h3>
+            <h3 class="menuItem">JORDAN</h3>
+            <h3 class="menuItem">BLAZER</h3>
+            <h3 class="menuItem">CRATER</h3>
+            <h3 class="menuItem">HIPPIE</h3>
+        </div>
+    </nav>
+    <div class="slider">
+        <div class="sliderWrapper">
+            <div class="sliderItem">
+                <img src="C:\Users\Administrator\Pictures\sne.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">AIR FORCE</br> NEW</br> SEASON</h1>
+                <h2 class="sliderPrice">50% <br>Off</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="C:\Users\Administrator\Pictures\sn.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">AIR JORDAN</br> NEW</br> SEASON</h1>
+                <h2 class="sliderPrice">20%<br>OFF</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="C:\Users\Administrator\Pictures\s.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">BLAZER</br> NEW</br> SEASON</h1>
+                <h2 class="sliderPrice">10%<br>OFF</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="C:\Users\Administrator\Pictures\snea.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">CRATER</br> NEW</br> SEASON</h1>
+                <h2 class="sliderPrice">80%<br>OFF</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+            <div class="sliderItem">
+                <img src="C:\Users\Administrator\Pictures\sneak.png" alt="" class="sliderImg">
+                <div class="sliderBg"></div>
+                <h1 class="sliderTitle">HIPPIE</br> NEW</br> SEASON</h1>
+                <h2 class="sliderPrice">5%<br>OFF</h2>
+                <a href="#product">
+                    <button class="buyButton">BUY NOW!</button>
+                </a>
+            </div>
+        </div>
+    </div>
+   
+    <div class="features">
+        <div class="feature">
+            <img src="C:\Users\Administrator\Pictures\f.png" alt="" class="featureIcon">
+            <span class="featureTitle">FREE SHIPPING</span>
+            <span class="featureDesc">Free worldwide shipping on all orders.</span>
+        </div>
+        <div class="feature">
+            <img class="featureIcon" src="C:\Users\Administrator\Downloads\r.png" alt="">
+            <span class="featureTitle">30 DAYS RETURN</span>
+            <span class="featureDesc">No question return and easy refund in 14 days.</span>
+        </div>
+        <div class="feature">
+            <img class="featureIcon" src="C:\Users\Administrator\Downloads\g..jfif" alt="">
+            <span class="featureTitle">GIFT CARDS</span>
+            <span class="featureDesc">Buy gift cards and use coupon codes easily.</span>
+        </div>
+        <div class="feature">
+            <img class="featureIcon" src="C:\Users\Administrator\Downloads\c.png" alt="">
+            <span class="featureTitle">CONTACT US!</span>
+            <span class="featureDesc">Keep in touch via email and support system.</span>
+        </div>
+    </div>
+
+    <div class="product" id="product">
+        <img src="C:\Users\Administrator\Downloads\a.png" alt="" class="productImg">
+        <div class="productDetails">
+            <h1 class="productTitle">AIR FORCE</h1>
+            <h2 class="productPrice">50% OFF</h2>
+            <p class="productDesc"> Athletic shoes made by Nike </p>
+            <div class="colors">
+                <div class="color"></div>
+                <div class="color"></div>
+            </div>
+            <div class="sizes">
+                <div class="size">42</div>
+                <div class="size">43</div>
+                <div class="size">44</div>
+            </div>
+            <button class="productButton">BUY NOW!</button>
+        </div>
+        <div class="payment">
+            <h1 class="payTitle">Personal Information</h1>
+            <label>Name </label>
+            <input type="text" placeholder="Name" class="payInput">
+            <label>Phone Number</label>
+            <input type="text" placeholder="+91 " class="payInput">
+            <label>Address</label>
+            <input type="text" placeholder="Street or Colony" class="payInput">
+            <h1 class="payTitle">Card Information</h1>
+            <div class="cardIcons">
+                <img src="C:\Users\Administrator\Downloads\v.png" width="40" alt="" class="cardIcon">
+                <img src="C:\Users\Administrator\Downloads\w.png" alt="" width="40" class="cardIcon">
+            </div>
+            <input type="password" class="payInput" placeholder="Card Number">
+            <div class="cardInfo">
+                <input type="text" placeholder="mm" class="payInput sm">
+                <input type="text" placeholder="yyyy" class="payInput sm">
+                <input type="text" placeholder="cvv" class="payInput sm">
+            </div>
+            <button class="payButton">Checkout!</button>
+            <span class="close">X</span>
+        </div>
+    </div>
+    <div class="gallery">
+        <div class="galleryItem">
+            <h1 class="galleryTitle">Be Yourself!</h1>
+            <img src="https://images.pexels.com/photos/9295809/pexels-photo-9295809.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                alt="" class="galleryImg">
+        </div>
+        <div class="galleryItem">
+            <img src="https://images.pexels.com/photos/1040427/pexels-photo-1040427.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                alt="" class="galleryImg">
+            <h1 class="galleryTitle">This is the First Day of Your New Life</h1>
+        </div>
+        <div class="galleryItem">
+            <h1 class="galleryTitle">Just Do it!</h1>
+            <img src="https://images.pexels.com/photos/7856965/pexels-photo-7856965.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                alt="" class="galleryImg">
+        </div>
+    </div>
+    <div class="newSeason">
+        <div class="nsItem">
+            <img src="https://images.pexels.com/photos/4753986/pexels-photo-4753986.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                alt="" class="nsImg">
+        </div>
+        <div class="nsItem">
+            <h3 class="nsTitleSm">WINTER NEW ARRIVALS</h3>
+            <h1 class="nsTitle">New Season</h1>
+            <h1 class="nsTitle">New Collection</h1>
+            <a href="#nav">
+                <button class="nsButton">CHOOSE YOUR STYLE</button>
+            </a>
+        </div>
+        <div class="nsItem">
+            <img src="https://images.pexels.com/photos/7856965/pexels-photo-7856965.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                alt="" class="nsImg">
+        </div>
+    </div>
+    <footer>
+        <div class="footerLeft">
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">About Us</h1>
+                <ul class="fList">
+                    <li class="fListItem">Company</li>
+                    <li class="fListItem">Contact</li>
+                    <li class="fListItem">Careers</li>
+                    <li class="fListItem">Affiliates</li>
+                    <li class="fListItem">Stores</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Useful Links</h1>
+                <ul class="fList">
+                    <li class="fListItem">Support</li>
+                    <li class="fListItem">Refund</li>
+                    <li class="fListItem">FAQ</li>
+                    <li class="fListItem">Feedback</li>
+                    <li class="fListItem">Stories</li>
+                </ul>
+            </div>
+            <div class="footerMenu">
+                <h1 class="fMenuTitle">Products</h1>
+                <ul class="fList">
+                    <li class="fListItem">Air Force</li>
+                    <li class="fListItem">Air Jordan</li>
+                    <li class="fListItem">Blazer</li>
+                    <li class="fListItem">Crater</li>
+                    <li class="fListItem">Hippie</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerRight">
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Subscribe to our newsletter</h1>
+                <div class="fMail">
+                    <input type="text" placeholder="your@email.com" class="fInput">
+                    <button class="fButton">Join!</button>
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <h1 class="fMenuTitle">Follow Us</h1>
+                <div class="fIcons">
+                    <img src="C:\Users\Administrator\Downloads\e.png" alt="" class="fIcon">
+                    <img src="C:\Users\Administrator\Downloads\t.png" alt="" class="fIcon">
+                    <img src="C:\Users\Administrator\Downloads\i.png" alt="" class="fIcon">
+                    <img src="C:\Users\Administrator\Downloads\y.png" alt="" class="fIcon">
+                </div>
+            </div>
+            <div class="footerRightMenu">
+                <span class="copyright">@Lama Dev. All rights reserved. 2022.</span>
+            </div>
+        </div>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+
+</html>
